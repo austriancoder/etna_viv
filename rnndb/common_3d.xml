@@ -247,13 +247,16 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
         <bitfield pos="3" name="MSAA"/>
     </bitset>
 
-    <enum name="COLOR_COMPRESSION_FORMAT"> <!-- TS and BLT color compression format -->
+    <enum name="COMPRESSION_FORMAT"> <!-- TS and BLT compression format -->
         <value value="0" name="A4R4G4B4"/>
         <value value="1" name="A1R5G5B5"/>
         <value value="2" name="R5G6B5"/>
         <value value="3" name="A8R8G8B8"/>
         <value value="4" name="X8R8G8B8"/>
         <value value="5" name="D24S8"/>
+        <value value="6" name="D24X8"/>
+        <value value="8" name="D16"/>
+        <value value="15" name="NONE"/> <!-- Used by blob when no compression (in BLT) - apparently used for R8G8 and A2B10G10R10 and integer formats -->
     </enum>
 
     <enum name="TEXTURE_FORMAT_ASTC">

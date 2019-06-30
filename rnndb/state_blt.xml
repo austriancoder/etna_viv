@@ -55,7 +55,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
     <bitset name="BLT_IMAGE_CONFIG">
         <bitfield pos="0" name="TS"/> <!-- enable tile status -->
         <bitfield pos="1" name="COMPRESSION"/> <!-- off when VIV_DISABLE_DEC400 -->
-        <bitfield high="7" low="4" name="COMPRESSION_FORMAT" type="COLOR_COMPRESSION_FORMAT"/>
+        <bitfield high="7" low="4" name="COMPRESSION_FORMAT" type="COMPRESSION_FORMAT"/>
         <bitfield pos="8" name="UNK8"/> <!-- affects coloring, possibly SRGB -->
         <!-- Not sure why there's another set of what looks like swizzles here.
              Setting them doesn't seem to have any effect on at least COPY_IMAGE.
