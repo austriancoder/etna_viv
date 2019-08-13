@@ -245,6 +245,8 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
         <bitfield pos="23" name="UNK23"/> <!-- set by blob on gc3000, not gc7000 -->
         <bitfield high="3" low="0" name="BASELOD"/>
         <bitfield high="11" low="8" name="MAXLOD"/>
+        <bitfield pos="17" name="COMPARE_ENABLE"/>
+        <bitfield high="22" low="20" name="COMPARE_FUNC" type="TEXTURE_COMPARE_FUNC" brief="For shadow sampler"/>
     </bitset>
     <bitset name="TE_SAMPLER_CONFIG2"> <!-- contains SAMPLER_MODE -->
         <bitfield pos="16" name="UNK16"/> <!-- always set? -->
