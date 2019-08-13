@@ -1265,16 +1265,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
                 </bitfield>
                 <bitfield high="14" low="13" name="MAG" type="TEXTURE_FILTER" brief="Filter for magnification"/>
                 <bitfield pos="17" name="COMPARE_ENABLE" />
-                <bitfield high="20" low="18" name="COMPARE_FUNC" brief="For shadow sampler">
-                    <value value="0" name="LE"/>
-                    <value value="1" name="GE"/>
-                    <value value="2" name="LT"/>
-                    <value value="3" name="GT"/>
-                    <value value="4" name="EQ"/>
-                    <value value="5" name="NE"/>
-                    <value value="6" name="ALWAYS"/>
-                    <value value="7" name="NEVER"/>
-                </bitfield>
+                <bitfield high="20" low="18" name="COMPARE_FUNC" type="TEXTURE_COMPARE_FUNC" brief="For shadow sampler"/>
                 <bitfield pos="21" name="UNK21"/> <!-- always set? not setting this causes MMU errors -->
                 <bitfield pos="22" name="UNK22"/> <!-- setting causes MMU errors -->
                 <bitfield pos="23" name="RGB" brief="RGB color space"/> <!-- a la TE_SAMPLER_LOG_SIZE.RGB -->

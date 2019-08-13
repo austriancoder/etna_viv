@@ -154,6 +154,16 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
         <value value="0" name="TILED"/>
         <value value="3" name="LINEAR"/>
     </enum>
+    <enum name="TEXTURE_COMPARE_FUNC">
+        <value value="0" name="LE"/>
+        <value value="1" name="GE"/>
+        <value value="2" name="LT"/>
+        <value value="3" name="GT"/>
+        <value value="4" name="EQ"/>
+        <value value="5" name="NE"/>
+        <value value="6" name="ALWAYS"/>
+        <value value="7" name="NEVER"/>
+    </enum>
 
     <!-- register descriptions shared between TE.SAMPLER and NTE.SAMPLER
          and texture descriptors
